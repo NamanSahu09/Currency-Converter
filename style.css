@@ -1,0 +1,221 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+
+ body
+{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ background: linear-gradient(rgb(32, 32, 32),rgb(110, 110, 110),white);
+} 
+
+.container
+{
+  font-family: Poppins;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.converter
+{
+  font-family: Poppins;
+  width: 50%;
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background:linear-gradient(white,rgb(255, 179, 179));
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.heading
+{
+ 
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #1e00c9;
+  
+  
+}
+.form1 {
+  
+  padding: 5px;
+  width: calc(100% - 20px); /* Adjusts width to account for padding in .converter */
+  box-sizing: border-box; /* Ensures padding is included in the width */
+  display: flex;
+  justify-content: flex-start; /* Centers the form items */
+  align-items: center; /* Vertically aligns form items */
+  margin: 2px; /* Top and bottom margin */
+}
+
+form
+{
+  width: 100%;
+}
+
+
+
+
+.form1 #amount {
+  width: 100%;
+  
+  padding: 8px; 
+  height: auto; 
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  box-sizing: border-box; 
+  transition: transform 0.5s ease, background 0.3s ease;
+}
+
+#amount:hover
+{
+  transform: scale(1.05); 
+}
+
+
+/* .from-to
+{
+ 
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  
+} */
+
+
+
+.select-container
+{
+ 
+  margin-top: 10px;
+
+  width: 100%;
+  display: flex;
+  align-items:center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.from1
+{
+
+  display: flex;
+  align-items:center;
+  margin-left: 1rem;
+
+
+}
+.to1
+{
+  display: flex;
+  align-items:center;
+  margin-right: 1rem;
+}
+
+
+
+
+
+
+.msg
+{
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #000000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn
+{
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #000000;
+  background: linear-gradient(orange,rgb(255, 0, 0));
+  box-shadow: 0px  5px 15px rgba(255, 195, 135, 0.45);
+  color: rgb(255, 255, 255);
+  border: none !important;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 12px;
+  transition: transform 0.5s ease, background 0.3s ease; 
+}
+
+.btn:hover {
+  background: linear-gradient(rgb(255, 165, 0), rgb(255, 50, 50));
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(255, 165, 0, 0.6); 
+}
+
+.fa-arrow-right-arrow-left
+{
+  font-size: 27px;
+  font-weight: 600;
+  
+
+}
+
+.container {
+  min-height: 100vh; 
+  padding-bottom: 50px; 
+}
+
+.select-container {
+  position: relative; 
+  z-index: 1; 
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .converter {
+    width: 80%; /* Increased width for smaller screens */
+    height: auto; /* Flexible height */
+  }
+
+  .heading {
+    font-size: 20px; /* Smaller text on smaller screens */
+  }
+
+  .btn {
+    padding: 10px; /* Slightly smaller padding */
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .converter {
+    width: 95%; /* Use more of the screen width on very small devices */
+  }
+
+  .heading, .msg {
+    font-size: 18px; /* Even smaller text for very small screens */
+  }
+
+  .form1, .select-container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+  }
+
+  .from1, .to1 {
+    margin: 0 0 10px 0; /* Adjust margins for stacked layout */
+  }
+
+  .btn {
+    width: 100%; /* Button takes full width */
+    margin-bottom: 10px;
+  }
+}

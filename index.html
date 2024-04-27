@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="shortcut_icon (1).png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  
+  <div class="container">
+
+    <div class="converter">
+      <div class="heading">
+        Currency Converter
+      </div>
+
+      <div class="form1">
+        <form action="">
+          <p>Enter Amount: </p>
+          <input type="number" name="amount" id="amount" placeholder="Enter Amount" >
+        </form>
+      </div>
+
+
+      <div class="select-container">
+        
+        <div class="from1"> 
+        <img src="https://flagsapi.com/US/flat/64.png" id="imgFrom">
+        <select name="from" id="from">
+        
+        </select>
+      </div>
+
+      <i class="fa-solid fa-arrow-right-arrow-left"></i> 
+      
+      <div class="to1"> 
+        
+        <img src="https://flagsapi.com/IN/flat/64.png" id="imgTo">
+        
+        <select name="to" id="to">
+          
+        </select>
+      </div>
+
+      </div>
+      <div class="msg">
+        1 USD = 80 INR
+      </div>
+      <div>
+        <button class="btn">Get Exchange Rate</button>
+        </div>
+    </div>
+  </div>
+
+
+  <script src="codes.js"></script>
+  <script src="javascript.js"></script>
+</body>
+</html>
